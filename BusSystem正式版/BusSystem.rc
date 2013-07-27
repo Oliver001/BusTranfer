@@ -1,0 +1,331 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BusSystem.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BusSystem.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 231, 43
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 BusSystem"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,13,21,21
+    LTEXT           "BusSystem 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,26,119,8
+    DEFPUSHBUTTON   "确定",IDOK,174,7,50,14,WS_GROUP
+END
+
+IDD_BUSSYSTEM_DIALOG DIALOGEX 0, 0, 406, 363
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "公交查询系统"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,392,349
+END
+
+IDD_BUSLN_DIALOG DIALOG DISCARDABLE  0, 0, 274, 251
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "查询",IDC_BUSLN_BUTTON,180,13,34,12
+    CONTROL         "Tree1",IDC_BUSLN_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_TABSTOP,17,34,106,202
+    COMBOBOX        IDC_BUSLN_COMBO,34,13,118,86,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "上行",IDC_GO_BUTTON,133,115,60,14
+    PUSHBUTTON      "下行",IDC_COME_BUTTON,198,114,59,14
+    LISTBOX         IDC_BUSLN_LIST,135,132,132,96,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_BUSLN_INFO_LIST,134,32,133,75,NOT LBS_NOTIFY | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_CHANGELN_DIALOG DIALOG DISCARDABLE  0, 0, 300, 252
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "起点",IDC_STATIC,20,26,17,8
+    COMBOBOX        IDC_CHLNSTART_COMBO,61,25,120,92,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CHLNEND_COMBO,61,52,120,94,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "终点",IDC_STATIC,20,54,17,8
+    PUSHBUTTON      "查询",IDC_CHLN_QUERY_BTN,198,37,33,14
+    PUSHBUTTON      "调换",IDC_SWITCH_BUTTON,241,37,33,14
+    CONTROL         "Tree1",IDC_CHLN_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_TABSTOP,13,76,274,169
+END
+
+IDD_SEEKSITE_DIALOG DIALOG DISCARDABLE  0, 0, 276, 252
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "查询",IDC_SKST_BUTTON,171,11,71,20
+    COMBOBOX        IDC_SKST_COMBO,14,14,122,156,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tree1",IDC_SKST_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_TABSTOP,3,38,268,203
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "BusSystem Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "BusSystem\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BusSystem.EXE\0"
+            VALUE "ProductName", "BusSystem 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_BUSSYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_BUSLN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_CHANGELN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+    END
+
+    IDD_SEEKSITE_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 249
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CHANGELN_DIALOG DLGINIT
+BEGIN
+    IDC_CHLNSTART_COMBO, 0x403, 7, 0
+0xf0bb, 0xb5b3, 0xbed5, "\000" 
+    IDC_CHLNSTART_COMBO, 0x403, 5, 0
+0xd3d6, 0xa5c2, "\000" 
+    IDC_CHLNSTART_COMBO, 0x403, 7, 0
+0xb1b1, 0xf3b4, 0xd6bd, "\000" 
+    IDC_CHLNSTART_COMBO, 0x403, 7, 0
+0xcfc4, 0xd4c9, 0xc5c3, "\000" 
+    IDC_CHLNSTART_COMBO, 0x403, 21, 0
+0xf7ce, 0xb2b0, 0xc6bf, 0xbcbc, 0xf3b4, 0xa7d1, 0xd9c1, 0xfce4, 0xa3d0, 
+0xf8c7, "\000" 
+    IDC_CHLNSTART_COMBO, 0x403, 13, 0
+0xc2c9, 0xf7ce, 0xc6bf, 0xbcbc, 0xf3b4, 0xa7d1, "\000" 
+    IDC_CHLNSTART_COMBO, 0x403, 17, 0
+0xafca, 0xcdd3, 0xf3b4, 0xa7d1, 0xa7bb, 0xd8cf, 0xa3d0, 0xf8c7, "\000" 
+    IDC_CHLNEND_COMBO, 0x403, 7, 0
+0xf0bb, 0xb5b3, 0xbed5, "\000" 
+    IDC_CHLNEND_COMBO, 0x403, 5, 0
+0xd3d6, 0xa5c2, "\000" 
+    IDC_CHLNEND_COMBO, 0x403, 7, 0
+0xb1b1, 0xf3b4, 0xd6bd, "\000" 
+    IDC_CHLNEND_COMBO, 0x403, 7, 0
+0xcfc4, 0xd4c9, 0xc5c3, "\000" 
+    IDC_CHLNEND_COMBO, 0x403, 21, 0
+0xf7ce, 0xb2b0, 0xc6bf, 0xbcbc, 0xf3b4, 0xa7d1, 0xd9c1, 0xfce4, 0xa3d0, 
+0xf8c7, "\000" 
+    IDC_CHLNEND_COMBO, 0x403, 13, 0
+0xc2c9, 0xf7ce, 0xc6bf, 0xbcbc, 0xf3b4, 0xa7d1, "\000" 
+    0
+END
+
+IDD_BUSLN_DIALOG DLGINIT
+BEGIN
+    IDC_BUSLN_COMBO, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_SEEKSITE_DIALOG DLGINIT
+BEGIN
+    IDC_SKST_COMBO, 0x403, 21, 0
+0xf7ce, 0xb2b0, 0xc6bf, 0xbcbc, 0xf3b4, 0xa7d1, 0xd9c1, 0xfce4, 0xa3d0, 
+0xf8c7, "\000" 
+    IDC_SKST_COMBO, 0x403, 13, 0
+0xc2c9, 0xf7ce, 0xc6bf, 0xbcbc, 0xf3b4, 0xa7d1, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 BusSystem(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\BusSystem.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BusSystem - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/BusSystem.res" /d "NDEBUG" /d "_AFXDLL" "C:\Users\Administrator\Desktop\BusSystem正式版\BusSystem.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP21B9.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/BusSystem.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\BusSystem正式版\ADO.cpp"
+"C:\Users\Administrator\Desktop\BusSystem正式版\BitmapTabCtrl.cpp"
+"C:\Users\Administrator\Desktop\BusSystem正式版\BusLnDlg.cpp"
+"C:\Users\Administrator\Desktop\BusSystem正式版\BusSystem.cpp"
+"C:\Users\Administrator\Desktop\BusSystem正式版\BusSystemDlg.cpp"
+"C:\Users\Administrator\Desktop\BusSystem正式版\ChangeLnDlg.cpp"
+"C:\Users\Administrator\Desktop\BusSystem正式版\SeekSiteDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP21B9.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP21BA.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/BusSystem.pdb" /machine:I386 /out:"Release/BusSystem.exe" 
+".\Release\ADO.obj"
+".\Release\BitmapTabCtrl.obj"
+".\Release\BusLnDlg.obj"
+".\Release\BusSystem.obj"
+".\Release\BusSystemDlg.obj"
+".\Release\ChangeLnDlg.obj"
+".\Release\SeekSiteDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\BusSystem.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP21BA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ADO.cpp
+c:\users\administrator\desktop\bussystem正式版\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+BitmapTabCtrl.cpp
+BusLnDlg.cpp
+c:\users\administrator\desktop\bussystem正式版\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+BusSystem.cpp
+c:\users\administrator\desktop\bussystem正式版\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+BusSystemDlg.cpp
+c:\users\administrator\desktop\bussystem正式版\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+ChangeLnDlg.cpp
+c:\users\administrator\desktop\bussystem正式版\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+SeekSiteDlg.cpp
+c:\users\administrator\desktop\bussystem正式版\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+BusSystem.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>
